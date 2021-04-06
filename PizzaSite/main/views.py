@@ -25,3 +25,6 @@ def Drinks(request):
 def Snacks(request):
     return render(request, 'main/snacks.html')
 
+
+def Sales(request):
+    return render(request, 'main/sales.html')
