@@ -10,3 +10,11 @@ def AboutUs(request):
     return render(request, 'main/aboutus.html')
 
 
+def Pizza(request):
+    return render(request, 'main/pizza.html')
+
+
+def Drinks(request):
+    return render(request, 'main/drinks.html')
+
+
