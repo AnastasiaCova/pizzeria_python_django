@@ -1,0 +1,78 @@
+{% extends "main/layout.html" %}
+
+{% block content  %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+{% load static %}
+<main class="container">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">О Нас</h1>
+        <p class="lead text-muted">раскрываем все карты</p>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 text-left container">
+      <div class="row py-lg-5">
+          <img class="bd-placeholder-img img-fluid" src = '{%static 'main/about.jpg'%}' width="50" height="50">
+          <h2>&nbsp;</h2>
+          <h5>Доставка от «ОГОНЬ пицца» – это быстро, удобно и очень вкусно!</h5>
+          <h5>Главным приоритетом ОГОНЬ пиццы является по-настоящему быстрая доставка вкусной пиццы. Мы максимально оптимизировали все рабочие процессы на нашей кухне и логистику. В одну смену у нас работает до 5 пицца-мейкеров и 10 курьеров одновременно.</h5>
+          <h2>&nbsp;</h2>
+          <img class="bd-placeholder-img img-fluid" src = '{%static 'main/about1.jpg'%}' width="50" height="50">
+          <h2>&nbsp;</h2>
+          <h1>Почему наша пицца такая вкусная?</h1>
+          <h5>Повара ОГОНЬ пиццы используют не только традиционные технологии приготовления, но и собственные ноу-хау, например, роскошный фирменный соус. С ним наша пицца еще сочнее и ароматнее! Немаловажно и то, что для всех блюд берутся только натуральные продукты: отборная мука, свежие овощи и зелень, ароматное оливковое масло, разнообразные сыры, а также мясные изделия высокого качества.</h5>
+          <h2>&nbsp;</h2>
+          <h2>Контактные данные:</h2>
+          <h5>Адрес: город Санкт-Петербург, проспект Комендантский, дом № 20, корпус 5</h5>
+          <h5>Время работы: с 09:00 до 18:00</h5>
+      </div>
+    </section>
+</main><!-- /.container -->
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#" class="btn btn-sm btn-outline-dark fw-bold">Наверх</a>
+    </p>
+  </div>
+</footer>
+
+{% endblock %}

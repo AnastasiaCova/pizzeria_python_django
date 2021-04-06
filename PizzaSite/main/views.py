@@ -6,3 +6,7 @@ def Main(request):
     return render(request, 'main/main.html')
 
 
+def AboutUs(request):
+    return render(request, 'main/aboutus.html')
+
+
