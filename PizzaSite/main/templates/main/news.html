@@ -1,0 +1,106 @@
+{% extends "main/layout.html" %}
+
+{% block content  %}
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    </head>
+
+  <body>
+  {% load static %}
+  <main class="container">
+
+  <div class="row mb-2 p-4 p-md-5 mb-4 rounded">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+        <div class="col p-4 d-flex flex-column position-static align-self-center">
+          <h4 class="mb-0">Пицца вегетерианская теперь и в нашем ресторане!</h4>
+          <h1>&nbsp;</h1>
+          <p class="lead">
+           <a href="/main/newscard/1" class="btn btn-sm btn-outline-dark fw-bold">Читать далее</a>
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img img-fluid" src='{%static 'main/student.jpg'%}' class="rounded" alt="..." width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static align-self-center">
+          <h4 class="mb-0">Попробуйте новинку - нежнейший чизкейк!</h4>
+            <h1>&nbsp;</h1>
+          <p class="lead">
+           <a href="/main/newscard/2" class="btn btn-sm btn-outline-dark fw-bold">Читать далее</a>
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img img-fluid" src='{%static 'main/newcheesecake.jpg'%}' class="rounded" alt="..." width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+        <div class="col p-4 d-flex flex-column position-static align-self-center">
+          <h4 class="mb-0">Успейте поучавствовать в нашей новой акции - 2 пиццы по цене 1</h4>
+          <h1>&nbsp;</h1>
+          <p class="lead">
+           <a href="/main/newscard/3" class="btn btn-sm btn-outline-dark fw-bold">Читать далее</a>
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img img-fluid" src='{%static 'main/piz1.jpeg'%}' class="rounded" alt="..." width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#" class="btn btn-sm btn-outline-dark fw-bold">Наверх</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+{% endblock %}

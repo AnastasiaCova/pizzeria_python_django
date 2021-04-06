@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from .models import MyNews
 
 
 def Main(request):
@@ -28,3 +29,14 @@ def Snacks(request):
 
 def Sales(request):
     return render(request, 'main/sales.html')
+
+
+def News(request):
+    return render(request, 'main/news.html')
+
+
+class NewsCard(View):
+    def get(self, request, pk):
+        news = MyNews.objects.filter(pk=pk)
+        return render(request, 'main/newscard.html', {"news": news})
+
