@@ -13,4 +13,5 @@ urlpatterns = [
     path('sales', views.Sales, name = 'sales'),
     path('news', views.News, name = 'news'),
     path('newscard/<int:pk>', NewsCard.as_view()),
+    path('basket', views.Basket, name = 'basket'),
 ]

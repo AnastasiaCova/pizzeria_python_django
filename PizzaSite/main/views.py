@@ -40,3 +40,7 @@ class NewsCard(View):
         news = MyNews.objects.filter(pk=pk)
         return render(request, 'main/newscard.html', {"news": news})
 
+
+def Basket(request):
+    return render(request, 'main/basket.html')
+

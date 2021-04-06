@@ -1,0 +1,99 @@
+{% extends "main/layout.html" %}
+
+{% block content  %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    </head>
+
+  <body>
+  {% load static %}
+  <main class="container">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Корзина</h1>
+        <p class="lead text-muted">Ваша скатерть самобранка</p>
+      </div>
+    </div>
+  </section>
+  <div class="container row mb-2 p-4 p-md-5 mb-4 rounded justify-content-center">
+    <div class="col-md-10">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+        <div class="col p-4 d-flex flex-column">
+            <div class="row">
+                    <div class="col-md-2 align-self-center"><img class="bd-placeholder-img img-fluid" src='{%static 'main/veggie.png'%}' class="rounded" alt="..." width="100" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></div>
+                    <div class="col align-self-center"><h5 class="mb-0">Пицца вегетерианская</h5></div>
+                    <div class="col-md-3 align-self-center">
+                        <div class="row container">
+                            <div class="col align-self-center">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                            </div>
+                            <div class="col align-self-center"><p class="mb-0">шт</p></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 align-self-center"><h6 class="mb-0">240 руб</h6></div>
+                    <div class="col-md-2 align-self-center"><button type="button" class="btn btn-sm btn-outline-dark fw-bold">Удалить</button></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  <section class="py-5 text-center container"><div class="row py-lg-5"></div></section>
+  <div class="row container justify-content-center">
+      <div class="col-md-9"><p class="lead"><a href="/main/pizza" class="btn btn-lg btn-outline-dark fw-bold">Назад в меню</a></p></div>
+      <div class="col-md-3"><button class="btn btn-lg btn-outline-dark fw-bold">Оформить заказ</button></div>
+  </div>
+  </main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#" class="btn btn-sm btn-outline-dark fw-bold">Наверх</a>
+    </p>
+  </div>
+</footer>
+  </body>
+
+
+{% endblock %}
